@@ -1,4 +1,4 @@
-import FullScreen from "./components/FullScreen";
+import Home from "./components/Home";
 import Header from "./components/header/Header";
 
 import { createGlobalStyle } from "styled-components";
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <FullScreen />
+      <Home />
       <Header />
     </div>
   );

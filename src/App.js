@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import Header from "./components/header/Header";
+import { useState, useEffect } from "react";
 
 import { createGlobalStyle } from "styled-components";
 
@@ -16,11 +17,28 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
+  const [headerVisible, setHeaderVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollYH > 0) {
+        setHeaderVisible(true);
+      } else {
+        setHeaderVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
       <GlobalStyle />
       <Home />
-      <Header />
+      <Header visible={headerVisible} />
     </div>
   );
 }

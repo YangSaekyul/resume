@@ -20,9 +20,9 @@ function Home() {
     <>
       <Container>
         <h1>
-          안녕하세요! 저는 <Name>양새결</Name>이고,
+          안녕하세요! <Name>프론트엔드 개발자</Name>
           <br />
-          <Name>프론트엔드 개발자</Name>입니다!
+          <Name>양새결</Name>입니다!
         </h1>
         <MoveButton>구경하기!</MoveButton>
       </Container>

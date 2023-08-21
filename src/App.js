@@ -1,3 +1,4 @@
+import AboutMe from "./components/AboutMe";
 import Home from "./components/Home";
 import Header from "./components/header/Header";
 import { useState, useEffect } from "react";
@@ -39,6 +40,7 @@ function App() {
       <GlobalStyle />
       <Home />
       <Header visible={headerVisible} />
+      <AboutMe />
     </div>
   );
 }

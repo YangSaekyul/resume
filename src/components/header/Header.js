@@ -1,32 +1,31 @@
 import styled from "styled-components";
-import photo from "./photo.jpeg";
-import Contact from "./Contact";
 
-const Container = styled.header`
+const Container = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
 `;
 
-const MyPhoto = styled.img`
-  width: 200px;
-  height: 200px;
-  border-radius: 30%;
+const Navigation = styled.div`
+  display: flex;
 `;
 
-const Title = styled.h2`
-  display: flex;
-  align-items: center;
+const Menu = styled.div`
+  margin: 0 10px;
 `;
 
 function Header() {
   return (
-    <>
-      <Container>
-        <MyPhoto src={photo} alt="증명사진" />
-        <Title>다양한 경험을 보유한 프론트엔드 개발자 ㅇㅇㅇ입니다!</Title>
-      </Container>
-      <Contact />
-    </>
+    <Container>
+      <div>양새결</div>
+      <Navigation>
+        <Menu>About Me</Menu>
+        <Menu>Skill</Menu>
+        <Menu>Career</Menu>
+        <Menu>Project</Menu>
+        <Menu>Contact</Menu>
+      </Navigation>
+    </Container>
   );
 }
 

@@ -9,7 +9,7 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Navigation = styled.div`
+const Navigation = styled.nav`
   display: flex;
 `;
 

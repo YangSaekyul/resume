@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import park from "../img/park.jpg";
+import { Title } from "./Title";
 
 const Container = styled.div`
   padding: 20px;
@@ -16,6 +17,7 @@ const Introduce = styled.div`
 function AboutMe() {
   return (
     <>
+      <Title>About Me</Title>
       <Container>
         <img src={park} alt="공원 사진" width={"400px"} />
         <Introduce>

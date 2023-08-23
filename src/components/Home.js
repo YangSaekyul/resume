@@ -6,7 +6,7 @@ import { useSpring, animated } from "react-spring";
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #ecf9ff;
+  background-color: #edf2f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,7 @@ const Container = styled.div`
 const Name = styled.span`
   font-weight: 900;
   font-size: 3em;
+  color: #6a7efc;
 `;
 
 function Home() {
@@ -41,8 +42,11 @@ function Home() {
         <animated.h1 style={portfolioProps}>
           <Name>PORTFOLIO</Name>
         </animated.h1>
-        <MoveButton onClick={() => scrollToSection("about")}>
-          구경하기!
+        <MoveButton
+          onClick={() => scrollToSection("AboutMe")}
+          style={{ marginTop: "50px", fontSize: "2rem", color: "#C7EEFF" }}
+        >
+          구경해보기
         </MoveButton>
       </Container>
     </>

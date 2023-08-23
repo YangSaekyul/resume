@@ -4,7 +4,7 @@ import { MoveButton } from "./Button";
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: lightslategray;
+  background-color: lightgrey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,11 @@ const Name = styled.span`
 `;
 
 function Home() {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Container>
@@ -24,7 +29,7 @@ function Home() {
           <br />
           <Name>양새결</Name>입니다!
         </h1>
-        <MoveButton>구경하기!</MoveButton>
+        <MoveButton onClick={scrollToAbout}>구경하기!</MoveButton>
       </Container>
     </>
   );

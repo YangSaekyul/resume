@@ -19,6 +19,8 @@ const Name = styled.span`
   color: #6a7efc;
 `;
 
+const AnimatedMoveButton = animated(MoveButton);
+
 function Home() {
   const nameProps = useSpring({
     from: { transform: "translateX(-100%)", opacity: 0 },
@@ -42,12 +44,17 @@ function Home() {
         <animated.h1 style={portfolioProps}>
           <Name>PORTFOLIO</Name>
         </animated.h1>
-        <MoveButton
+        <AnimatedMoveButton
+          style={{
+            ...portfolioProps,
+            marginTop: "50px",
+            fontSize: "2rem",
+            color: "white",
+          }}
           onClick={() => scrollToSection("AboutMe")}
-          style={{ marginTop: "50px", fontSize: "2rem", color: "#C7EEFF" }}
         >
           구경해보기
-        </MoveButton>
+        </AnimatedMoveButton>
       </Container>
     </>
   );

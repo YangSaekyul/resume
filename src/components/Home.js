@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MoveButton } from "./Button";
+import { scrollToSection } from "../utils/navigation";
 
 const Container = styled.div`
   width: 100%;
@@ -16,11 +17,6 @@ const Name = styled.span`
 `;
 
 function Home() {
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
-    aboutSection.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
       <Container>
@@ -29,7 +25,9 @@ function Home() {
           <br />
           <Name>양새결</Name>입니다!
         </h1>
-        <MoveButton onClick={scrollToAbout}>구경하기!</MoveButton>
+        <MoveButton onClick={() => scrollToSection("about")}>
+          구경하기!
+        </MoveButton>
       </Container>
     </>
   );

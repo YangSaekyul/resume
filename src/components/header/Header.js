@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import idPicture from "../../img/idPicture.jpeg";
+import { scrollToSection } from "../../utils/navigation";
 
 const Container = styled.header`
   top: 0;
@@ -25,15 +26,20 @@ const Menu = styled.div`
 `;
 
 function Header({ visible }) {
+  const menuItems = ["About Me", "Skill", "Career", "Project", "Contact"];
+
   return (
     <Container visible={visible}>
       <img src={idPicture} alt="내사진" height={"50%"} />
       <Navigation>
-        <Menu>About Me</Menu>
-        <Menu>Skill</Menu>
-        <Menu>Career</Menu>
-        <Menu>Project</Menu>
-        <Menu>Contact</Menu>
+        {menuItems.map((item) => (
+          <Menu
+            key={item}
+            onClick={() => scrollToSection(item.replace(/\s+/g, ""))}
+          >
+            {item}
+          </Menu>
+        ))}
       </Navigation>
     </Container>
   );

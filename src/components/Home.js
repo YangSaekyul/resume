@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { MoveButton } from "./Button";
+import { MoveButton } from "../assets/Button";
 import { scrollToSection } from "../utils/navigation";
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: lightgrey;
+  background-color: #ecf9ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,8 @@ const Container = styled.div`
 `;
 
 const Name = styled.span`
-  color: blue;
+  font-weight: 900;
+  font-size: 2em;
 `;
 
 function Home() {
@@ -21,9 +22,9 @@ function Home() {
     <>
       <Container>
         <h1>
-          안녕하세요! <Name>프론트엔드 개발자</Name>
+          <Name>SAEKYUL YANG</Name>
           <br />
-          <Name>양새결</Name>입니다!
+          <Name>PORTFOLIO</Name>
         </h1>
         <MoveButton onClick={() => scrollToSection("about")}>
           구경하기!

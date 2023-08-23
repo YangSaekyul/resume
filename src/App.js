@@ -41,8 +41,10 @@ function App() {
       <GlobalStyle />
       <Home />
       <Header visible={headerVisible} />
-      <AboutMe />
-      <Skill />
+      <main>
+        <AboutMe />
+        <Skill />
+      </main>
     </div>
   );
 }

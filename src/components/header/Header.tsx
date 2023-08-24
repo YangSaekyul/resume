@@ -28,6 +28,11 @@ const Navigation = styled.nav`
 
 const Menu = styled.div`
   margin: 0 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: #1e90ff;
+  }
 `;
 
 function Header({ visible }: HeaderProps) {

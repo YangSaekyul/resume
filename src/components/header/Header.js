@@ -32,7 +32,8 @@ const Menu = styled.div`
 `;
 
 function Header({ visible }) {
-  const menuItems = ["About Me", "Skill", "Career", "Project", "Contact"];
+  const menuItems = ["About Me", "Skill", "Project", "Contact"];
+  //   const menuItems = ["About Me", "Skill", "Career", "Project", "Contact"];
 
   return (
     <HeaderContainer visible={visible}>

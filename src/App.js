@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import { useState, useEffect } from "react";
 
 import { styled, createGlobalStyle } from "styled-components";
+// import Career from "./components/career/Career";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
@@ -48,6 +49,7 @@ function App() {
       <MainContainer>
         <AboutMe />
         <Skill />
+        {/* <Career /> */}
       </MainContainer>
     </div>
   );

@@ -3,11 +3,7 @@ import idPicture from "../../img/idPicture.jpeg";
 import { scrollToSection } from "../../utils/navigation";
 import React from "react";
 
-interface HeaderProps {
-  visible: boolean;
-}
-
-const HeaderContainer = styled.header<HeaderProps>`
+const HeaderContainer = styled.header`
   top: 0;
   left: 0;
   display: flex;
@@ -35,7 +31,7 @@ const Menu = styled.div`
   }
 `;
 
-function Header({ visible }: HeaderProps) {
+function Header({ visible }) {
   const menuItems = ["About Me", "Skill", "Career", "Project", "Contact"];
 
   return (

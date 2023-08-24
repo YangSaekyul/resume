@@ -1,10 +1,12 @@
+import { useState, useEffect } from "react";
+
+import { styled, createGlobalStyle } from "styled-components";
 import AboutMe from "./components/about/AboutMe";
 import Home from "./components/Home";
 import Skill from "./components/skill/Skill";
 import Header from "./components/header/Header";
-import { useState, useEffect } from "react";
-
-import { styled, createGlobalStyle } from "styled-components";
+import Project from "./components/project/Project";
+import Contact from "./components/contact/Contact";
 // import Career from "./components/career/Career";
 
 const GlobalStyle = createGlobalStyle`
@@ -20,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const MainContainer = styled.main`
-  margin-top: ${(props) => (props.headerVisible ? "" : "70px")};
+  margin-top: ${(props) => (props.headerVisible ? "" : "30px")};
 `;
 
 function App() {
@@ -50,6 +52,8 @@ function App() {
         <AboutMe />
         <Skill />
         {/* <Career /> */}
+        <Project />
+        <Contact />
       </MainContainer>
     </div>
   );

@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { Title } from "../Title";
 
 const Container = styled.div`
+  background-color: #d4e2d4;
+  padding: 5px 20px 20px 20px;
+`;
+
+const Part = styled.div`
   display: flex;
   justify-content: center;
   width: 80%;
@@ -51,10 +56,10 @@ const FlexColumnContainer = styled.div`
 
 function Skill() {
   return (
-    <>
+    <Container>
       <Title id="Skill">Skill</Title>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <Container>
+        <Part>
           <SkillContainer>
             <SkillTitle>FrontEnd</SkillTitle>
             <FlexContainer>
@@ -401,9 +406,9 @@ function Skill() {
               </Image>
             </SkillContainer>
           </FlexColumnContainer>
-        </Container>
+        </Part>
       </div>
-    </>
+    </Container>
   );
 }
 

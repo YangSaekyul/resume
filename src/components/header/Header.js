@@ -12,7 +12,7 @@ const Container = styled.header`
   align-items: center;
   width: 100%;
   position: ${(props) => (props.visible ? "fixed" : "")};
-  background-color: ${(props) => (props.visible ? "gray" : "")};
+  background-color: ${(props) => (props.visible ? "rgba(0, 0, 0, 0.1)" : "")};
   transition: background-color 2s ease;
 `;
 

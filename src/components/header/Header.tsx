@@ -1,8 +1,13 @@
 import styled from "styled-components";
 import idPicture from "../../img/idPicture.jpeg";
 import { scrollToSection } from "../../utils/navigation";
+import React from "react";
 
-const Container = styled.header`
+interface HeaderProps {
+  visible: boolean;
+}
+
+const HeaderContainer = styled.header<HeaderProps>`
   top: 0;
   left: 0;
   display: flex;
@@ -12,7 +17,7 @@ const Container = styled.header`
   align-items: center;
   width: 100%;
   position: ${(props) => (props.visible ? "fixed" : "")};
-  background-color: ${(props) => (props.visible ? "gray" : "")};
+  background-color: ${(props) => (props.visible ? "rgba(0, 0, 0, 0.1)" : "")};
   transition: background-color 2s ease;
 `;
 
@@ -25,11 +30,11 @@ const Menu = styled.div`
   margin: 0 10px;
 `;
 
-function Header({ visible }) {
+function Header({ visible }: HeaderProps) {
   const menuItems = ["About Me", "Skill", "Career", "Project", "Contact"];
 
   return (
-    <Container visible={visible}>
+    <HeaderContainer visible={visible}>
       <img src={idPicture} alt="내사진" height={"50%"} />
       <Navigation>
         {menuItems.map((item) => (
@@ -41,7 +46,7 @@ function Header({ visible }) {
           </Menu>
         ))}
       </Navigation>
-    </Container>
+    </HeaderContainer>
   );
 }
 

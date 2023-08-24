@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import idPicture from "../../img/idPicture.jpeg";
 import { scrollToSection } from "../../utils/navigation";
+import React from "react";
 
-const Container = styled.header`
+const HeaderContainer = styled.header`
   top: 0;
   left: 0;
   display: flex;
@@ -34,7 +35,7 @@ function Header({ visible }) {
   const menuItems = ["About Me", "Skill", "Career", "Project", "Contact"];
 
   return (
-    <Container visible={visible}>
+    <HeaderContainer visible={visible}>
       <img src={idPicture} alt="내사진" height={"50%"} />
       <Navigation>
         {menuItems.map((item) => (
@@ -46,7 +47,7 @@ function Header({ visible }) {
           </Menu>
         ))}
       </Navigation>
-    </Container>
+    </HeaderContainer>
   );
 }
 

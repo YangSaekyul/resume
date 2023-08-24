@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Title } from "../Title";
+import React from "react";
 
 const Container = styled.div`
   display: flex;
@@ -334,27 +335,6 @@ function Skill() {
                   ></path>
                 </svg>
               </Image>
-              {/* Zoom */}
-              <Image>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="100"
-                  height="100"
-                  viewBox="0 0 48 48"
-                >
-                  <circle cx="24" cy="24" r="20" fill="#2196f3"></circle>
-                  <path
-                    fill="#fff"
-                    d="M29,31H14c-1.657,0-3-1.343-3-3V17h15c1.657,0,3,1.343,3,3V31z"
-                  ></path>
-                  <polygon
-                    fill="#fff"
-                    points="37,31 31,27 31,21 37,17"
-                  ></polygon>
-                </svg>
-              </Image>
             </SkillContainer>
             <SkillContainer>
               <SkillTitle>Deployment</SkillTitle>
@@ -376,27 +356,6 @@ function Skill() {
                     fill="#f90"
                     d="M43.396,33.992c-5.252,3.918-12.883,5.998-19.445,5.998c-9.195,0-17.481-3.434-23.739-9.142 c-0.495-0.451-0.048-1.064,0.543-0.709c6.769,3.966,15.118,6.369,23.755,6.369c5.827,0,12.229-1.225,18.119-3.741 C43.508,32.364,44.258,33.347,43.396,33.992z M45.583,31.477c-0.671-0.871-4.438-0.419-6.146-0.21 c-0.511,0.064-0.591-0.387-0.128-0.726c3.001-2.128,7.934-1.516,8.509-0.806c0.575,0.726-0.16,5.708-2.969,8.094 c-0.431,0.371-0.846,0.177-0.655-0.306C44.833,35.927,46.254,32.331,45.583,31.477z"
                   ></path>
-                </svg>
-              </Image>
-              {/* Zoom */}
-              <Image>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="100"
-                  height="100"
-                  viewBox="0 0 48 48"
-                >
-                  <circle cx="24" cy="24" r="20" fill="#2196f3"></circle>
-                  <path
-                    fill="#fff"
-                    d="M29,31H14c-1.657,0-3-1.343-3-3V17h15c1.657,0,3,1.343,3,3V31z"
-                  ></path>
-                  <polygon
-                    fill="#fff"
-                    points="37,31 31,27 31,21 37,17"
-                  ></polygon>
                 </svg>
               </Image>
             </SkillContainer>

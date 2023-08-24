@@ -1,7 +1,7 @@
 import AboutMe from "./components/about/AboutMe";
 import Home from "./components/Home";
 import Skill from "./components/skill/Skill";
-import Header from "./components/header/Header";
+import Header from "./components/header/Header.tsx";
 import { useState, useEffect } from "react";
 
 import { styled, createGlobalStyle } from "styled-components";

@@ -22,12 +22,14 @@ const Name = styled.span`
 const AnimatedMoveButton = animated(MoveButton);
 
 function Home() {
+  // 이름에 대한 애니메이션
   const nameProps = useSpring({
     from: { transform: "translateX(-100%)", opacity: 0 },
     to: { transform: "translateX(0)", opacity: 1 },
     delay: 1000,
   });
 
+  // 포트폴리오에 대한 애니메이션
   const portfolioProps = useSpring({
     from: { transform: "translateX(100%)", opacity: 0 },
     to: { transform: "translateX(0)", opacity: 1 },

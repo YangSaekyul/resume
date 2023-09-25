@@ -6,5 +6,5 @@ export const Title = styled.h1`
   font-size: 3rem;
   text-decoration: underline;
   text-underline-offset: 20px;
-  margin: 50px 0 50px 0;
+  margin: 50px 0;
 `;

@@ -7,7 +7,6 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  height: 50px;
   align-items: center;
   width: 100%;
 
@@ -55,7 +54,12 @@ function Header() {
         backgroundColor: scrolled ? "rgba(0, 0, 0, 0.2)" : "white",
       }}
     >
-      <img src={idPicture} alt="내사진" height={"50%"} />
+      <img
+        className="h-10 rounded-lg"
+        src={idPicture}
+        alt="내사진"
+        height={"20px"}
+      />
       <Navigation>
         {menuItems.map((item) => (
           <Menu

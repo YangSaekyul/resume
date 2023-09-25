@@ -24,7 +24,17 @@ function AboutMe() {
     <>
       <Title id="AboutMe">About Me</Title>
       <Container>
-        <img src={park} alt="공원 사진" width={"400px"} />
+        <div className="flex flex-col">
+          <img src={park} alt="공원 사진" width={"400px"} />
+          <p className="text-3xl">☎️ Contact</p>
+          <hr />
+          <Text>📩 E-mail: saekyulyang@gmail.com</Text>
+          <Text></Text>
+          <Text></Text>
+          <Text></Text>
+          <Text></Text>
+          <Text></Text>
+        </div>
         <Introduce>
           <Text>안녕하세요. 🙇🏻</Text>
           <Text>

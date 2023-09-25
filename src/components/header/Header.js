@@ -48,6 +48,10 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <HeaderContainer
       style={{
@@ -55,10 +59,10 @@ function Header() {
       }}
     >
       <img
-        className="h-10 rounded-lg"
+        className="h-10 rounded-lg cursor-pointer"
         src={idPicture}
         alt="내사진"
-        height={"20px"}
+        onClick={handleScrollTop}
       />
       <Navigation>
         {menuItems.map((item) => (

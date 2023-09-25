@@ -15,7 +15,7 @@ const Container = styled.div`
 
 const Name = styled.span`
   font-weight: 900;
-  font-size: 3em;
+  font-size: 5em;
   color: #6a7efc;
 `;
 

@@ -72,8 +72,8 @@ function Skill() {
           <SkillContainer>
             <SkillTitle>FrontEnd</SkillTitle>
             <FlexContainer>
+              {/* HTML */}
               <Image>
-                {/* HTML */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 128 128"
@@ -159,6 +159,7 @@ function Skill() {
                 </g>
               </svg>
             </Image>
+            {/* TypeScript */}
             <Image>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -188,10 +189,7 @@ function Skill() {
               </svg>
             </Image>
             {/* Tailwind */}
-            <svg
-              viewBox="0 0 248 31"
-              class="text-slate-900 dark:text-white w-auto h-5"
-            >
+            <svg viewBox="0 0 248 31" class="text-slate-900 w-full h-full">
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -409,7 +407,6 @@ function Skill() {
                   ></path>
                 </svg>
               </Image>
-              {/* Zoom */}
             </SkillContainer>
           </FlexColumnContainer>
         </Part>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import idPicture from "../../img/idPicture.jpeg";
 import { scrollToSection } from "../../utils/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -10,12 +10,13 @@ const HeaderContainer = styled.header`
   height: 50px;
   align-items: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  transition: background-color 2s ease;
 
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  background-color: white;
+  transition: background-color 2s ease;
 `;
 
 const Navigation = styled.nav`
@@ -36,8 +37,27 @@ function Header() {
   const menuItems = ["About Me", "Skill", "Project", "Contact"];
   //   const menuItems = ["About Me", "Skill", "Career", "Project", "Contact"];
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer
+      style={{
+        backgroundColor: scrolled ? "rgba(0, 0, 0, 0.2)" : "white",
+      }}
+    >
       <img src={idPicture} alt="내사진" height={"50%"} />
       <Navigation>
         {menuItems.map((item) => (

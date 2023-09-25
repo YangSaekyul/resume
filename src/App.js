@@ -19,9 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const MainContainer = styled.main`
-  margin-top: ${(props) => (props.headerVisible ? "" : "30px")};
-`;
+const MainContainer = styled.main``;
 
 function App() {
   return (

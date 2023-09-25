@@ -28,6 +28,7 @@ const SkillContainer = styled.div`
   align-items: center;
   flex: 1;
   border: 1px solid gray;
+  border-radius: 5%;
 
   /* 우측과 아래 그림자 */
   box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.3);
@@ -204,8 +205,6 @@ function Skill() {
                 fill="currentColor"
               />
             </svg>
-            {/* Styled-Components */}
-            <Image></Image>
           </SkillContainer>
           <FlexColumnContainer>
             <SkillContainer>

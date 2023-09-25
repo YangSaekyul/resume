@@ -5,6 +5,9 @@ import { Title } from "../Title";
 const Container = styled.div`
   padding: 20px;
   display: flex;
+
+  max-width: 1280px;
+  margin: 0 auto;
 `;
 
 const Introduce = styled.div`

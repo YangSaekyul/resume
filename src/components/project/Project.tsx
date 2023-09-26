@@ -4,6 +4,14 @@ import stackoverflow from "./stackoverflow.png";
 import bbangorder from "./bbangorder.png";
 import { GithubIcon } from "../../assets/Icon";
 
+interface ProjectItemProps {
+  projectName: string;
+  projectSubtitle?: string;
+  projectDescription: JSX.Element;
+  imageSrc: string;
+  githubLink?: string;
+}
+
 const Container = styled.div`
   background-color: #a6d0dd;
   padding: 5px 20px 20px 20px;
@@ -86,7 +94,7 @@ const Highlight = styled.span`
   font-weight: bold;
 `;
 
-const ProjectItem = ({
+const ProjectItem: React.FC<ProjectItemProps> = ({
   projectName,
   projectSubtitle,
   projectDescription,

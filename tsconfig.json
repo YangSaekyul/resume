@@ -23,6 +23,12 @@
     "noImplicitThis": true,
     "strictNullChecks": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.jpg"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.jpg",
+    "src/App.js",
+    "src/index.js"
+  ],
   "typeRoots": ["types"]
 }

@@ -25,12 +25,18 @@ const ProjectContainer = styled.div`
 const ImageContainer = styled.div`
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 `;
 
 const Image = styled.img`
   width: 500px;
-  height: 500px;
   border-radius: 10px;
+  object-fit: cover;
+
+  &:hover {
+    scale: 1.05;
+    transition: all 0.5s ease-in-out;
+  }
 `;
 
 const ProjectName = styled.div`
@@ -121,10 +127,20 @@ const Project = () => {
               예약된 시간에 픽업 주문까지 할 수 있습니다.
             </Paragraph>
             <Paragraph>
+              프로젝트의 목적은 서비스가 가능한 형태로 만드는 것이었습니다.
+              그렇기 때문에 UI/UX에 집중하였고, 버그나 기능적 디테일에 최대한
+              초점을 두었습니다.
+            </Paragraph>
+            <Paragraph>
+              <Highlight>React</Highlight>를 메인으로 사용하였고,{" "}
+              <Highlight>React Router</Highlight>를 사용하여 각 페이지 이동을
+              구현하였습니다.
+            </Paragraph>
+            <Paragraph>
               <Highlight>Zustand</Highlight>를 사용하여 상태관리를 하였는데 이와
               같은 새로운 라이브러리를 사용하면서 상태관리에 대한 이해도를 높일
               수 있었습니다. <Highlight>OAuth2</Highlight>를 이용하여 토큰을
-              받아 로그인을 구현하는 과정에서 많이 힘들었지만 성공하였습니다.
+              받아 로그인을 구현하는 과정이 어려웠습니다.
             </Paragraph>
             <Paragraph>
               스타일 관리는 <Highlight>Tailwind CSS</Highlight>를 메인으로
@@ -149,6 +165,11 @@ const Project = () => {
             <Paragraph>
               부트캠프를 수강하면서 메인 프로젝트를 진입하기 전 프로젝트에 대한
               감각을 익히고자 첫 번째 협업으로 주어진 과제입니다.
+            </Paragraph>
+            <Paragraph>
+              <Highlight>React</Highlight>를 메인으로 사용하였고,{" "}
+              <Highlight>React Router</Highlight>를 사용하여 각 페이지 이동을
+              구현하였습니다.
             </Paragraph>
             <Paragraph>
               질문 목록을 GET 요청으로 받아와{" "}

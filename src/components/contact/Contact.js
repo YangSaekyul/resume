@@ -26,7 +26,9 @@ const Contact = () => {
     <Container>
       <Title id="Contact">Contact</Title>
       <div>
-        <GithubIcon />
+        <a href="https://github.com/YangSaekyul">
+          <GithubIcon />
+        </a>
         <LinkedinIcon />
         <EmailIcon />
         <InstagramIcon />

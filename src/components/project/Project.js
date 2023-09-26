@@ -60,6 +60,11 @@ const PositionedGithubIcon = styled.div`
   position: absolute;
   right: 20px;
   top: 20px;
+
+  &:hover {
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+  }
 `;
 
 const ProjectSubtitle = styled.div`
@@ -127,9 +132,9 @@ const Project = () => {
               예약된 시간에 픽업 주문까지 할 수 있습니다.
             </Paragraph>
             <Paragraph>
-              프로젝트의 목적은 서비스가 가능한 형태로 만드는 것이었습니다.
-              그렇기 때문에 UI/UX에 집중하였고, 버그나 기능적 디테일에 최대한
-              초점을 두었습니다.
+              프로젝트의 목적은 <Highlight>서비스가 가능한 형태</Highlight>로
+              만드는 것이었습니다. 그렇기 때문에 <Highlight>UI/UX</Highlight>에
+              집중하였고, 버그나 기능적 디테일에 최대한 초점을 두었습니다.
             </Paragraph>
             <Paragraph>
               <Highlight>React</Highlight>를 메인으로 사용하였고,{" "}
@@ -156,6 +161,25 @@ const Project = () => {
         }
         imageSrc={bbangorder}
         githubLink="https://github.com/codestates-seb/seb45_main_014"
+      />
+      <ProjectItem
+        projectName="포트폴리오"
+        projectSubtitle="수시로 최신화"
+        projectDescription={
+          <>
+            <Paragraph>
+              저를 표현하는 웹사이트입니다. 앞으로 쭉 최신화를 할 예정이며, 새로
+              습득한 기술을 적용하면서 수정 중입니다.
+            </Paragraph>
+            <Paragraph>
+              자기소개, 사용 가능한 기술, 프로젝트, 연락처로 구성되어 있습니다.
+            </Paragraph>
+          </>
+        }
+        imageSrc={
+          "https://user-images.githubusercontent.com/121498405/262725736-72a3f094-6d54-438f-9b74-aafcada7acb2.png"
+        }
+        githubLink="https://github.com/YangSaekyul/resume"
       />
       <ProjectItem
         projectName="스택오버플로우 클론코딩"

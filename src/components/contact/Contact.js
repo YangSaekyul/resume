@@ -8,7 +8,7 @@ import {
 } from "../../assets/Icon";
 
 const Container = styled.div`
-  background-color: #99a98f;
+  background-color: lightgray;
   padding: 5px 20px 20px 20px;
 
   > div {

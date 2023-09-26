@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import park from "../../img/park.jpg";
+import park from "../../assets/img/park.jpg";
 import { Title } from "../Title";
 
 const Container = styled.div`

@@ -8,6 +8,10 @@ const Container = styled.div`
 
   max-width: 1280px;
   margin: 0 auto;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const Introduce = styled.div`
@@ -16,10 +20,27 @@ const Introduce = styled.div`
   flex-direction: column;
   justify-content: center;
   font-size: 20px;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 `;
 
 const Text = styled.p`
   margin: 5px 0;
+`;
+
+const MyImage = styled.img`
+  width: 400px;
+
+  @media (max-width: 768px) {
+    width: 300px;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 function AboutMe() {
@@ -27,7 +48,7 @@ function AboutMe() {
     <>
       <Title id="AboutMe">About Me</Title>
       <Container>
-        <img src={park} alt="공원 사진" width={"400px"} />
+        <MyImage src={park} alt="공원 사진" />
         <Introduce>
           <Text>안녕하세요. 🙇🏻</Text>
           <Text>

@@ -18,6 +18,17 @@ const Container = styled.div`
 
   > div > a {
     margin: 0 20px;
+
+    @media (max-width: 600px) {
+      margin: 0 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
   }
 `;
 

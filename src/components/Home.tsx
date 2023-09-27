@@ -17,6 +17,10 @@ const Name = styled.span`
   font-weight: 900;
   font-size: 5em;
   color: #6a7efc;
+
+  @media (max-width: 600px) {
+    font-size: 3em;
+  }
 `;
 
 const AnimatedMoveButton = animated(MoveButton);

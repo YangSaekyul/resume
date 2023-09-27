@@ -30,6 +30,11 @@ const Menu = styled.div`
   &:hover {
     color: #ff0000;
   }
+
+  @media (max-width: 600px) {
+    text-shadow: 0.5px 0.5px 0.5px black;
+    color: gray;
+  }
 `;
 
 function Header() {

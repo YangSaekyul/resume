@@ -90,7 +90,7 @@ const Project = () => {
         githubLink="https://github.com/YangSaekyul/resume"
       />
       <ProjectItem
-        projectName="스택오버플로우 클론코딩"
+        projectName="스택오버플로우"
         projectSubtitle="2023.08.04 - 2023.08.23"
         projectDescription={
           <>

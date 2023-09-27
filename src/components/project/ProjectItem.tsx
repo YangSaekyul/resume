@@ -20,6 +20,14 @@ const ProjectContainer = styled.div`
   padding: 20px;
   flex-direction: column;
   position: relative;
+
+  @media (max-width: 600px) {
+    width: 70%;
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -42,11 +50,14 @@ const Image = styled.img`
 const ProjectName = styled.div`
   font-size: 40px;
   font-weight: bold;
-`;
 
-const ProjectDescription = styled.div`
-  font-size: 20px;
-  width: 50%;
+  @media (max-width: 1024px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
 `;
 
 const ProjectDetail = styled.div`
@@ -54,6 +65,20 @@ const ProjectDetail = styled.div`
   justify-content: space-around;
   gap: 40px;
   padding: 0 20px;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+const ProjectDescription = styled.div`
+  font-size: 20px;
+  width: 50%;
+
+  @media (max-width: 1280px) {
+    width: 100%;
+  }
 `;
 
 const PositionedGithubIcon = styled.div`
@@ -64,6 +89,14 @@ const PositionedGithubIcon = styled.div`
   &:hover {
     scale: 1.1;
     transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 1024px) {
+    /* 크기 줄이기 */
+    svg {
+      width: 50px;
+      height: 50px;
+    }
   }
 `;
 

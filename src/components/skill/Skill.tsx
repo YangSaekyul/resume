@@ -9,7 +9,11 @@ const Container = styled.div`
 const Part = styled.div`
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 60%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const SkillTitle = styled.h1`

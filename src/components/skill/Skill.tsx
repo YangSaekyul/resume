@@ -193,7 +193,7 @@ function Skill() {
               </svg>
             </Image>
             {/* Tailwind */}
-            <svg viewBox="0 0 248 31" class="text-slate-900 w-full h-full">
+            <svg viewBox="0 0 248 31" className="w-full h-full text-slate-900">
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"

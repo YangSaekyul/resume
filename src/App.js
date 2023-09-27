@@ -5,6 +5,7 @@ import Skill from "./components/skill/Skill";
 import Header from "./components/header/Header";
 import Project from "./components/project/Project";
 import Contact from "./components/contact/Contact";
+import ScrollButtonWithPosition from "./assets/ScrollButton";
 // import Career from "./components/career/Career";
 
 const GlobalStyle = createGlobalStyle`
@@ -25,6 +26,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
+      <ScrollButtonWithPosition />
       <Home />
       <Header />
       <MainContainer>

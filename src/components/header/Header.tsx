@@ -25,6 +25,8 @@ const Navigation = styled.nav`
 
 const Menu = styled.div`
   margin: 0 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
   cursor: pointer;
 
   &:hover {
@@ -33,7 +35,7 @@ const Menu = styled.div`
 
   @media (max-width: 600px) {
     text-shadow: 0.5px 0.5px 0.5px black;
-    color: gray;
+    color: lightyellow;
   }
 `;
 

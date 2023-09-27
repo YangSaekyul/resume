@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import idPicture from "../../img/idPicture.jpeg";
+import idPicture from "../../assets/img/idPicture.jpeg";
 import { scrollToSection } from "../../utils/navigation";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -63,6 +63,7 @@ function Header() {
         src={idPicture}
         alt="내사진"
         onClick={handleScrollTop}
+        width={50}
       />
       <Navigation>
         {menuItems.map((item) => (

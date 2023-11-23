@@ -2,10 +2,12 @@ import styled from "styled-components";
 import { Title } from "../Title";
 import stackoverflow from "./stackoverflow.png";
 import bbangorder from "./bbangorder.png";
+import seniorjob from "./seniorjob.png";
 import ProjectItem from "./ProjectItem";
 import {
   bbangOrderDescription,
   portfolioDescription,
+  seniorJobDescription,
   stackoverflowDescription,
 } from "./Descriptions";
 
@@ -19,8 +21,15 @@ const Project = () => {
     <Container>
       <Title id="Project">Project</Title>
       <ProjectItem
+        projectName="시니어잡"
+        projectSubtitle="2023.10.19 - ing"
+        projectDescription={seniorJobDescription()}
+        imageSrc={seniorjob}
+        githubLink="https://github.com/YangSaekyul/senior-job"
+      />
+      <ProjectItem
         projectName="빵오더"
-        projectSubtitle="2023.08.24 - ing"
+        projectSubtitle="2023.08.24 - 2023.09.23"
         projectDescription={bbangOrderDescription()}
         imageSrc={bbangorder}
         githubLink="https://github.com/codestates-seb/seb45_main_014"

@@ -13,16 +13,44 @@ const Highlight = styled.span`
   font-weight: bold;
 `;
 
+export const seniorJobDescription = () => {
+  return (
+    <>
+      <Paragraph>
+        인구 고령화, 일자리 부족과 같은 사회적 이슈를 해결하고자{" "}
+        <Highlight>시니어들을 위해 강의를 제공</Highlight>하는 서비스입니다.
+      </Paragraph>
+      <Paragraph>
+        더 도전적으로 프로젝트를 해보기 위해 <Highlight>TypeScript</Highlight>를
+        적용하였고, 스타일링은 <Highlight>tailwind-styled-components</Highlight>
+        를 사용하였으며, 상태관리는 빵오더 서비스와 동일하게{" "}
+        <Highlight>Zustand</Highlight>를 사용하였습니다.
+      </Paragraph>
+      <Paragraph>
+        저는 해당 프로젝트에서 <Highlight>강좌 개설</Highlight> 부분을
+        구현하였습니다.
+      </Paragraph>
+      <Paragraph>
+        강좌 개설은 1, 2, 3단계 이후 개설하기 버튼을 눌러 백엔드와 동시 유효성
+        검사를 마친 후 결점이 없다면 새 강좌를 생성하게 됩니다.
+      </Paragraph>
+      <Paragraph>
+        현재는 전체적인 완성은 끝났으나{" "}
+        <Highlight>예외 처리, 성능 최적화, 반응형 웹</Highlight> 작업이 필요하여
+        보완 중에 있습니다.
+      </Paragraph>
+      <Paragraph></Paragraph>
+    </>
+  );
+};
+
 export const bbangOrderDescription = () => {
   return (
     <>
       <Paragraph>
-        <span className="font-bold">
-          빵오더 서비스는 빵집을 한 눈에 찾기 어려웠던 경험을 바탕으로 구상된
-          서비스
-        </span>
-        입니다. 빵집을 검색하거나, 추천 빵집으로 접속해서 메뉴를 고르고 예약된
-        시간에 픽업 주문까지 할 수 있습니다.
+        빵오더 서비스는 빵집을 한 눈에 찾기 어려웠던 경험을 바탕으로 구상된
+        서비스입니다. 빵집을 검색하거나, 추천 빵집으로 접속해서 메뉴를 고르고
+        예약된 시간에 픽업 주문까지 할 수 있습니다.
       </Paragraph>
       <Paragraph>
         프로젝트의 목적은 <Highlight>서비스가 가능한 형태</Highlight>로 만드는
@@ -44,11 +72,6 @@ export const bbangOrderDescription = () => {
         스타일 관리는 <Highlight>Tailwind CSS</Highlight>를 메인으로 사용하고,
         중복 코드를 최대한 방지하기 위해{" "}
         <Highlight>Styled Components</Highlight>를 같이 사용하였습니다.
-      </Paragraph>
-      <Paragraph>
-        현재는 스프린트를 나누어 개발하고 있습니다. 1차 스프린트는 사이트를
-        운영하는데 핵심 기능만 구현하였고, 현재는 2차 스프린트로 도전적인 과제를
-        진행 중에 있습니다.
       </Paragraph>
     </>
   );

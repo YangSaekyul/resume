@@ -20,13 +20,13 @@ const Project = () => {
   return (
     <Container>
       <Title id="Project">Project</Title>
-      <ProjectItem
+      {/* <ProjectItem
         projectName="시니어잡"
         projectSubtitle="2023.10.19 - ing"
         projectDescription={seniorJobDescription()}
         imageSrc={seniorjob}
         githubLink="https://github.com/YangSaekyul/senior-job"
-      />
+      /> */}
       <ProjectItem
         projectName="빵오더"
         projectSubtitle="2023.08.24 - 2023.09.23"

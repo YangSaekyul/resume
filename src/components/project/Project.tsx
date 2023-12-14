@@ -41,7 +41,7 @@ const Project = () => {
         imageSrc={stackoverflow}
         githubLink="https://github.com/codestates-seb/seb45_pre_022"
       />
-      <ProjectItem
+      {/* <ProjectItem
         projectName="포트폴리오"
         projectSubtitle="수시로 최신화"
         projectDescription={portfolioDescription()}
@@ -49,7 +49,7 @@ const Project = () => {
           "https://user-images.githubusercontent.com/121498405/262725736-72a3f094-6d54-438f-9b74-aafcada7acb2.png"
         }
         githubLink="https://github.com/YangSaekyul/resume"
-      />
+      /> */}
     </Container>
   );
 };

@@ -33,6 +33,7 @@ const Project = () => {
         projectDescription={bbangOrderDescription()}
         imageSrc={bbangorder}
         githubLink="https://github.com/codestates-seb/seb45_main_014"
+        projectLink="http://bbangorder.s3-website.ap-northeast-2.amazonaws.com"
       />
       <ProjectItem
         projectName="스택오버플로우"

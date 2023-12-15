@@ -7,6 +7,7 @@ interface ProjectItemProps {
   projectDescription: JSX.Element;
   imageSrc: string;
   githubLink?: string;
+  projectLink?: string;
 }
 
 const ProjectContainer = styled.div`
@@ -40,6 +41,7 @@ const Image = styled.img`
   width: 500px;
   border-radius: 10px;
   object-fit: cover;
+  cursor: pointer;
 
   &:hover {
     scale: 1.05;
@@ -112,6 +114,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   projectDescription,
   imageSrc,
   githubLink,
+  projectLink,
 }) => {
   return (
     <ProjectContainer>
@@ -126,7 +129,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       )}
       <ProjectDetail>
         <ImageContainer>
-          <Image src={imageSrc} />
+          <a href={projectLink}>
+            <Image src={imageSrc} />
+          </a>
         </ImageContainer>
         <ProjectDescription>{projectDescription}</ProjectDescription>
       </ProjectDetail>

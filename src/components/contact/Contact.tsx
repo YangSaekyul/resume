@@ -37,12 +37,12 @@ const Contact = () => {
     <Container>
       <Title id="Contact">Contact</Title>
       <div>
+        <EmailIcon />
         <a href="https://github.com/YangSaekyul">
           <GithubIcon />
         </a>
         <LinkedinIcon />
-        <EmailIcon />
-        <InstagramIcon />
+        {/* <InstagramIcon /> */}
       </div>
     </Container>
   );

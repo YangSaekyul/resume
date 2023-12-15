@@ -65,13 +65,14 @@ function Header() {
         backgroundColor: scrolled ? "rgba(0, 0, 0, 0.2)" : "white",
       }}
     >
-      <img
+      <div></div>
+      {/* <img
         className="h-10 rounded-lg cursor-pointer"
         src={idPicture}
         alt="내사진"
         onClick={handleScrollTop}
         width={50}
-      />
+      /> */}
       <Navigation>
         {menuItems.map((item) => (
           <Menu

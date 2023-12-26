@@ -414,6 +414,7 @@ function Skill() {
                 </svg>
               </Image>
             </SkillContainer>
+            {/* TODO: 플러터 */}
           </FlexColumnContainer>
         </Part>
       </div>
